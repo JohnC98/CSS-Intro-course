@@ -1,11 +1,18 @@
 /*style sheet for exercise 2*/
 body{
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0); /*dark mode*/
+}
+p{
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: sans-serif;
+	color: FFFFFF;
+	font-size: 120px;
 }
 h1{
 	text-align: center;
 	font-family: sans-serif;
-	color: FECC02; 
+	color: FECC02; /*all colour codes for flags found on flagcolourcodes.com*/
 	font-size: 100px;
 	line-height: 100px;
 }
@@ -30,23 +37,85 @@ h4{
 	font-size: 100px;
 	line-height: 100px;
 }
-.swe-flg{
+
+	/*div{
+	margin: auto;
+}*/ /*this bit of code bricked everything*/
+
+.separation{
+	margin-left: auto;
+	margin-right: auto; /*making sure they're centered left-right*/
+	margin-top: 50px;
+	width: 1600px;
+	height: 5px;
+	background-color: 575757;
+	border-radius: 30%
+}
+.swe_flg{
+	margin-left: auto;
+	margin-right: auto;
 	width: 800px;
 	height: 500px;
 	display: grid;
-	grid-template-columns: [sc1] 250px [sc2] 100px [sc3]450px [end];
-	grid-template-rows: [sr1] 200px [sr2] 100px [sr3] 200px [end];
+	background-color: 006AA7;
+	grid-template-columns: [sc1] 250px [sc2] 100px [sc3] 450px [sc4]; /* 50px per unit of the reference images */
+	grid-template-rows: [sr1] 200px [sr2] 100px [sr3] 200px [sr4];
 	justify-items: stretch;
 }
-.swe-blue{
-	background: 006AA7;
+#swe_yel{
+	background-color: FECC02;
 }
 .den_flg{
-
+	margin-left: auto;
+	margin-right: auto;
+	width: 850px;
+	height: 700px;
+	display: grid;
+	background-color: C8102E;
+	grid-template-columns: [dc1] 300px [dc2] 100px [dc3] 450px [dc4]; /* 50px per unit of the reference images so that the flags are similar sized */
+	grid-template-rows: [dr1] 300px [dr2] 100px [dr3] 300px [dr4];
+	justify-items: stretch;
+}
+#den_whi{
+	background-color: FFFFFF;
 }
 .fin_flg{
-
+	margin-left: auto;
+	margin-right: auto;
+	width: 810px;
+	height: 585px;
+	display: grid;
+	background-color: FFFFFF;
+	grid-template-columns: [fc1] 225px [fc2] 135px [fc3] 450px [fc4]; /* 45px per unit of the reference images so that the flags are similar sized */
+	grid-template-rows: [fr1] 225px [fr2] 135px [fr3] 225px [fr4];
+	justify-items: stretch;
+}
+#fin_blu{
+	background-color: 002F6C;
 }
 .ice_flg{
-
+	margin-left: auto;
+	margin-right: auto;
+	width: 875px;
+	height: 630px;
+	display: grid;
+	background-color: 02529C;
+	grid-template-columns: [ic1] 245px [ic2] 35px [ic3] 70px [ic4] 35px [ic5] 490px [ic6]; /* 35px per unit of the reference images so that the flags are similar sized */
+	grid-template-rows: [ir1] 245px [ir2] 35px [ir3] 70px [ir4] 35px [ir5] 245px [ir6];
+	justify-items: stretch;
+}
+#ice_red{
+	background-color: DC1E35;
+}
+.usa_flg{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 200px; /* some negative space on the bottom */
+	width: 1000px;
+	height: 600px;
+	display: grid;
+	background-color: B31942;
+	grid-template-columns: [uc1] 1000px [uc2];
+	grid-template-rows: repeat(50, 12px); /* saves me from having to type [ur1] 12px [ur2] ... [ur51] */
+	justify-items: stretch;
 }
