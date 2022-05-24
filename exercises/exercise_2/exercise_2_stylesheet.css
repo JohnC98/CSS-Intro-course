@@ -1,0 +1,52 @@
+/*style sheet for exercise 2*/
+body{
+	background-color: rgb(0, 0, 0);
+}
+h1{
+	text-align: center;
+	font-family: sans-serif;
+	color: FECC02; 
+	font-size: 100px;
+	line-height: 100px;
+}
+h2{
+	text-align: center;
+	font-family: sans-serif;
+	color: C8102E;
+	font-size: 100px;
+	line-height: 100px;
+}
+h3{
+	text-align: center;
+	font-family: sans-serif;
+	color: FFFFFF;
+	font-size: 100px;
+	line-height: 100px;
+}
+h4{
+	text-align: center;
+	font-family: sans-serif;
+	color: 02529C;
+	font-size: 100px;
+	line-height: 100px;
+}
+.swe-flg{
+	width: 800px;
+	height: 500px;
+	display: grid;
+	grid-template-columns: [sc1] 250px [sc2] 100px [sc3]450px [end];
+	grid-template-rows: [sr1] 200px [sr2] 100px [sr3] 200px [end];
+	justify-items: stretch;
+}
+.swe-blue{
+	background: 006AA7;
+}
+.den_flg{
+
+}
+.fin_flg{
+
+}
+.ice_flg{
+
+}
