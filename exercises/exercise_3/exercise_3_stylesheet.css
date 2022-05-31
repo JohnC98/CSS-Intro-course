@@ -1,0 +1,83 @@
+/* style sheet for exercise 3 */
+@import url(https://fonts.googleapis.com/css?family=Monoton);
+@import url(https://use.typekit.net/ner0zxo.css);
+@font-face {
+  font-family: 'pressstart2p';
+  src:  url('typeface/pressstart2p-regular-webfont.woff2') format('woff2'),
+        url('typeface/pressstart2p-regular-webfont.woff') format('woff');
+}
+
+body{
+	background-color: rgb(0, 0, 0); /* dark mode */
+}
+h1{
+	text-align: center;
+	margin-top: 5vh;
+	font-family: sans-serif;
+	font-size: 20vh;
+	filter: invert(80%); /* inverting colour for auto contrast */
+}
+h2 {
+ 	font-family: josefin-sans, sans-serif;
+ 	font-weight: 400;
+ 	font-style: normal;
+ 	text-align: center;
+	margin-top: 50vh;
+	font-size: 20vh;
+	filter: invert(80%);
+}
+h2:hover {
+	animation-name: spinning;
+	animation-duration: 2s;
+	animation-direction: normal;
+}
+@keyframes spinning{
+	from{
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+h3{
+ 	font-family: "Monoton", fantasy;
+ 	font-weight: 400;
+ 	font-style: normal;
+ 	text-align: center;
+ 	letter-spacing: 20px; /* for some reason the "R" isn't kerned properly and I can't figure out how to increase the margin just for "R" */
+	margin-top: 50vh;
+	font-size: 20vh;
+	filter: invert(80%);
+}
+h3:hover {
+	animation-name: runoff;
+	animation-duration: 2s;
+	animation-direction: normal;
+}
+@keyframes runoff{
+	from {
+		transform: skew(0deg) translate(0px);
+	}
+	5%{
+		transform: skew(5deg) translate(30px);
+	}
+	to {
+		transform: skew(15deg) translate(2000px);
+	}
+}
+h4{
+	margin-left: auto;
+	margin-right: auto;
+ 	font-family: "pressstart2p", monospace;
+ 	font-weight: 400;
+ 	font-style: normal;
+ 	text-align: center;
+	margin-top: 50vh;
+	font-size: 20vh;
+	color: rgb(100, 100, 100);
+	transition: .5s linear
+}
+h4:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 30px #fff;
+}
